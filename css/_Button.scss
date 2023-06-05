@@ -1,0 +1,35 @@
+
+
+
+@mixin general-btn($Color,$Bg-color,$Border-radius){
+    border: none;
+	text-align: center;
+	cursor: pointer;
+	color: $Color;
+	background-color: $Bg-color;
+	border-radius: $Border-radius;
+	&:hover {
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+      }
+
+}
+// .btn_Y_planer{
+// @include general-btn($color-white, $color-primary,1rem);
+// 	padding: 0.7rem 2rem;
+// }
+
+// .btn_M_planer{
+// 	@include general-btn($color-black,$color-white,1rem);
+//     padding: 0.7rem 2rem;
+// }
+
+
+// .btn_VD{
+// 	@include general-btn($color-black,$color-white,3rem);
+// 	padding: 5.8px 8px;
+// }
+// .btn_G_S{
+// 	@include general-btn($color-black,$color-primary,3rem);
+// 	padding: 1rem 1.5rem;
+// }
+

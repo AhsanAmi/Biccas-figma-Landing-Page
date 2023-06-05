@@ -1,0 +1,371 @@
+@import"_Button";
+@import"_colortheme";
+@import"_heading";
+@import"_FontFamily";
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+//   Boot Strap Class Container Padding 
+.container {
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+}
+.Feature-section-essential_padding {
+	padding-top: 2.5rem;
+	padding-bottom: 0.5rem;
+}
+.text_center {
+	text-align: center;
+	align-items: center;
+}
+.div_center {
+	display: grid;
+	place-items: center
+}
+.img-main {
+	img {
+		width: 100%;
+	}
+}
+.img-maini {
+	img {
+		width: 100%;
+		padding: 2rem 2rem;
+	}
+}
+.img-mai {
+	img {
+		width: 20px;
+	}
+}
+.inner-container-money_trans {
+	padding: 3rem 3rem;
+	p {
+		margin-top: 1rem;
+		margin-left: 2rem;
+	}
+}
+.planer_YM {
+	background-color: $color-white;
+	width: 300px;
+	padding: 0.3rem 0.2rem;
+	border-radius: 1rem;
+}
+.flex-container {
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	width: auto;
+	flex-wrap: wrap;
+}
+.contributer_padding {
+	flex-wrap: wrap;
+	img {
+		padding: 4rem 3rem;
+	}
+}
+nav {
+	background: $color-tertiary;
+	font-family: 'Inter';
+	height: 80px;
+	width: 100%;
+	ul {
+		float: right;
+		margin-right: 20px;
+		li {
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+			a {
+				color: $color_pentary;
+				font-size: 17px;
+				padding: 7px 13px;
+				border-radius: 3px;
+				text-decoration: none;
+				&.active, &:hover {
+					color: $color-black;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	#login_Signin {
+		a {
+			&.active, &:hover {
+				background: $color-primary;
+				transition: .5s;
+				color: $color-tertiary;
+				border-radius: 10px;
+				text-decoration: none;
+			}
+		}
+	}
+	label {
+		&.logo {
+			color: $color-primary;
+			font-size: 35px;
+			line-height: 80px;
+			padding: 0 100px;
+			font-weight: bold;
+		}
+	}
+}
+.checkbtn {
+	font-size: 30px;
+	color: $color-primary;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px) {
+	label.logo {
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav {
+		ul {
+			li {
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+	}
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: $color-tertiary;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav {
+		ul {
+			li {
+				display: block;
+				margin: 50px 0;
+				line-height: 30px;
+				a {
+					font-size: 20px;
+				}
+				&:hover, .active {
+					background: none;
+					color: $color-black;
+				}
+			}
+		}
+	}
+	#check:checked~ul {
+		left: 0;
+	}
+}
+.Main_Heading {
+	@include general-font($heading_font, 3rem, 5.4rem, 0rem, $color-black);
+}
+.sub_heading_1 {
+	@include general-font($heading_font, 2.4rem, auto, auto, $color-black);
+}
+.sub_heading_2 {
+	@include general-font($heading_font, 1.68rem, auto, auto, $color-black);
+}
+.sub_heading_3 {
+	@include general-font($heading_font, 1.8rem, auto, auto, $color-black);
+}
+.paragraph {
+	@include general-font($paragraph_font, 1.08rem, 1.8rem, auto, $color-black);
+}
+.sub_paragraph {
+	@include general-font($paragraph_font, 1rem, 1.8rem, auto, $color_pentary);
+	font-weight: 400;
+}
+@mixin bg-color-primary {
+	background-color: $color-tertiary;
+}
+@mixin bg-color-secondary {
+	background-color: $color-seconday;
+}
+.hero-section, .chose_a_plan, .Hero_Section_3, .Hero_Section_4 {
+	@include bg-color-primary();
+}
+;
+.Hero_Section_2 {
+	@include bg-color-secondary();
+}
+.btn_Y_planer {
+	@include general-btn($color-white, $color-primary, 1rem);
+	padding: 0.7rem 2rem;
+}
+.btn_M_planer {
+	@include general-btn($color-black, $color-white, 1rem);
+	padding: 0.7rem 2rem;
+}
+.btn_VD {
+	@include general-btn($color-black, $color-white, 3rem);
+	padding: 5.8px 8px;
+}
+.btn_G_S {
+	@include general-btn($color-black, $color-primary, 3rem);
+	padding: 1rem 1.5rem;
+	color: $color-white;
+}
+@mixin pricing_main_box($bg_color) {
+	padding: 10px;
+	flex: 10.3%;
+	margin: 3rem 1rem;
+	border-radius: 10px;
+	background-color: $bg_color;
+	padding-top: 3rem;
+	&:hover {
+		box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.621)
+	}
+	flex-wrap:wrap;
+}
+.pricing-item-left {
+	@include pricing_main_box($color-white);
+	.inner-box {
+		background-color: $color-seconday;
+		p {
+			color: $color-black;
+			margin-top: 15px;
+			margin-left: 10px;
+			padding: 0 10px;
+		}
+		padding: 1rem 3rem;
+		margin: 2rem 1rem;
+		border-radius: 1rem;
+	}
+	.btn_inner {
+		@include general-btn($color-black, $color-white, 1rem);
+		padding: 0.7rem 2rem;
+		font-size: 20px
+	}
+}
+.pricing-item-right {
+	@include pricing_main_box( $color-white);
+	.inner-box {
+		background-color: $color-seconday;
+		p {
+			color: $color-black;
+			margin-top: 15px;
+			margin-left: 10px;
+			padding: 0 10px;
+		}
+		padding: 1rem 3rem;
+		margin: 2rem 1rem;
+		border-radius: 1rem;
+	}
+	.btn_inner {
+		@include general-btn($color-black, $color-white, 1rem);
+		padding: 0.7rem 2rem;
+		font-size: 20px
+	}
+}
+.pricing-item-center {
+	@include pricing_main_box( $color-primary);
+	h1, p, h3 {
+		color: $color-white;
+	}
+	.inner-box {
+		background-color: $color-white;
+		p {
+			color: $color-black;
+			margin-top: 15px;
+			margin-left: 10px;
+			padding: 0 10px;
+		}
+		padding: 1rem 3rem;
+		margin: 2rem 1rem;
+		border-radius: 1rem;
+	}
+	.btn_inner {
+		@include general-btn($color-white, $color-primary, 1rem);
+		padding: 0.7rem 2rem;
+		font-size: 20px
+	}
+}
+.fotter {
+	background-color: $color-fotter-primary;
+	h2, label {
+		color: $color-white;
+	}
+	p {
+		color: $color_pentary;
+	}
+	.container_1 {
+		padding: 1rem 4rem;
+		.flex-container {
+			flex-wrap: wrap;
+			img {
+				padding: 10px 10px;
+				width: 90px;
+			}
+		}
+	}
+	.container_2 {
+		padding: 2rem 2rem;
+		background-color: $color-fotter-secondary;
+		input[type=text] {
+			width: 60%;
+			padding: 8px;
+			border: none;
+			border-radius: 3px;
+			resize: vertical;
+		}
+		input[type=button] {
+			@include general-btn($color-white, $color-primary, 1rem);
+			width: 60%;
+			padding: 8px;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		label, h2 {
+			padding: 10px 0px;
+		}
+	}
+	.container_3 {
+		input[type=text] {
+			width: 50%;
+			padding: 15px;
+			border: 1px;
+			border-color: $color_pentary;
+			border-radius: 3rem;
+			resize: vertical;
+			background-color: $color-fotter-primary;
+			color: $color_pentary;
+			border-style: solid;
+		}
+	}
+	.container_4 {
+		text-align: left;
+		li {
+			padding: 10px 5px;
+			a {
+				color: #A6A6A6;
+				font-size: 17px;
+				padding: 7px 13px;
+				border-radius: 3px;
+				text-decoration: none;
+				&.active, &:hover {
+					color: #a6a6a67a;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

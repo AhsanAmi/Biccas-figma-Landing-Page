@@ -1,0 +1,11 @@
+
+
+@mixin general-font($f_f,$f_s,$l_h,$l_s,$Color){
+    font-weight: bold;
+    font-family:$f_f;
+    font-size: $f_s;
+    line-height:$l_h;
+    letter-spacing:$l_s;
+    color:$Color;
+}
+
