@@ -7,7 +7,7 @@
 <a href="https://www.figma.com/proto/0FXMnSYfLyiEJWEpnWtAom/Saas-Landing-Pages-(Community)?node-id=0-7&scaling=min-zoom&page-id=0%3A1">You will be found UI Design Here Design on Figma</a>
 <br>
 # Live Demo 🎥
-<a href="https://ahsan-amin.github.io/Biccas-figma/">Live Demo Link</a>
+<a href="https://ahsanami.github.io/Biccas-figma-Landing-Page/">Live Demo Link</a>
 # Build with
   <li>
     HTML5
