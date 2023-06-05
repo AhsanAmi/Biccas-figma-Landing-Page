@@ -27,14 +27,6 @@ Convert Figma UI designs into html5, Scss & bootstrap.
 
 Start by clicking the green button in the upper right corner to download the code.
 
-Clone the repository and navigate to the project directory
-
-<!-- Clone the repo
-
-   ```sh
-   git clone https://github.com/Ahsan-Amin/Biccas-figma
-   ``` -->
-   
 # Contributing 🤝
 
 I welcome contributions to this project! If you would like to contribute, please follow these steps:
@@ -55,7 +47,7 @@ Please make sure to follow our coding standards and best practices
 			</li>
             <h4>You can also follow my GitHub Profile to stay updated about my latest projects</h4>
 			<li >
-				<label>GitHub:<label><a href="https://github.com/Ahsan-Amin">@github</a>
+				<label>GitHub:<label><a href="https://github.com/ahsanami">@github</a>
 			</li>
 		<br>
  If you liked the repo then kindly support it by giving it a star ⭐!
