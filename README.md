@@ -1,5 +1,5 @@
 # Biccas-figma-using-Sass
-<b>Convert Figma UI designs into html5, Scss & bootstrap</b>
+<b>Convert Figma UI designs into HTML5,SCSS & Bootstrap</b>
 <br>
 
 <img alt="" src="./Photo/img_1.png">
